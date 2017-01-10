@@ -1,0 +1,17 @@
+button {
+	font-family: Arial;
+	font-size: 27px;
+	width: 95px;
+	border-radius: 14px;
+	background-color: #E0E0E0;
+	padding: 10px 0;
+	text-align: center;
+}
+div {
+	background-color: darkgray;
+	padding: 6px;
+}
+body {
+	width: 416px;
+	align-content: center;
+}
