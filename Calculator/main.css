@@ -1,17 +1,52 @@
+.interface {
+	margin: 6px 8px;
+	width: 375px;
+	height: 82px;
+	background-color: #E2F8B8;
+	border-radius: 12px;
+	margin-bottom: 20px;
+	box-shadow: 3px 3px #7f7f7f;
+	text-align: right;
+	font-size: 30px;
+}
+div {
+	padding: 6px 8px;
+	background-color: darkgray;
+}
+body {
+	width: 426px;
+	align-content: center;
+}
 button {
-	font-family: Arial;
+	font-family: Verdana;
 	font-size: 27px;
 	width: 95px;
-	border-radius: 14px;
+	border-radius: 12px;
 	background-color: #E0E0E0;
 	padding: 10px 0;
 	text-align: center;
+	box-shadow: 1px 1px #7f7f7f;
+
+	background: -webkit-linear-gradient(white, lightgray);
+    background: -o-linear-gradient(white, lightgray);
+    background: -moz-linear-gradient(white, lightgray);
+    background: linear-gradient(white, lightgray);
 }
-div {
-	background-color: darkgray;
-	padding: 6px;
+button:hover {
+	box-shadow: 3px 3px 4px #7f7f7f;
 }
-body {
-	width: 416px;
-	align-content: center;
+button:active {
+	box-shadow: 1px 1px;
+}
+button:focus {
+	outline:0;
+}
+.zero {
+	width: 194px;
+}
+.equal {
+	height: 126px;
+	float: right;
+	margin-top: 6px;
+	margin-right: 10px;
 }
