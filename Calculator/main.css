@@ -1,14 +1,17 @@
-.interface {
+/* IDs */
+#interface {
 	margin: 6px 8px;
+	margin-bottom: 20px;
 	width: 375px;
 	height: 82px;
 	background-color: #E2F8B8;
 	border-radius: 12px;
-	margin-bottom: 20px;
 	box-shadow: 3px 3px #7f7f7f;
 	text-align: right;
 	font-size: 30px;
 }
+
+/* Classes */
 div {
 	padding: 6px 8px;
 	background-color: darkgray;
@@ -16,7 +19,10 @@ div {
 body {
 	width: 426px;
 	align-content: center;
+	box-shadow: 8px 8px gray;
 }
+
+/* Properties for all buttons */
 button {
 	font-family: Verdana;
 	font-size: 27px;
@@ -27,20 +33,29 @@ button {
 	text-align: center;
 	box-shadow: 1px 1px #7f7f7f;
 
-	background: -webkit-linear-gradient(white, lightgray);
-    background: -o-linear-gradient(white, lightgray);
-    background: -moz-linear-gradient(white, lightgray);
-    background: linear-gradient(white, lightgray);
+	/* Different browsers */
+	background: -webkit-linear-gradient(lightgray, rgb(224, 224, 224), rgb(224, 224, 224), rgb(224, 224, 224), gray);
+    background: -o-linear-gradient(lightgray, rgb(224, 224, 224), rgb(224, 224, 224), rgb(224, 224, 224), gray);
+    background: -moz-linear-gradient(lightgray, rgb(224, 224, 224), rgb(224, 224, 224), rgb(224, 224, 224) gray);
+    background: linear-gradient(lightgray, rgb(224, 224, 224), rgb(224, 224, 224), rgb(224, 224, 224) gray);
 }
 button:hover {
 	box-shadow: 3px 3px 4px #7f7f7f;
 }
 button:active {
 	box-shadow: 1px 1px;
+	
+	/* Different browsers */
+	background: -webkit-linear-gradient(gray, rgb(224, 224, 224), rgb(224, 224, 224), rgb(224, 224, 224), lightgray);
+    background: -o-linear-gradient(gray, rgb(224, 224, 224), rgb(224, 224, 224), rgb(224, 224, 224), lightgray);
+    background: -moz-linear-gradient(gray, rgb(224, 224, 224), rgb(224, 224, 224), rgb(224, 224, 224) lightgray);
+    background: linear-gradient(gray, rgb(224, 224, 224), rgb(224, 224, 224), rgb(224, 224, 224) lightgray);
 }
 button:focus {
 	outline:0;
 }
+
+/* Properties of 0 and = buttons */
 .zero {
 	width: 194px;
 }
