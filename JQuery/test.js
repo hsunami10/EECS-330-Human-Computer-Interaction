@@ -6,6 +6,7 @@
 	The "action" is also called an event
 
 	fadeIn, fadeOut, fadeToggle, fadeTo
+		speed -> "slow", "fast", "milliseconds"
 
 */
 
@@ -22,23 +23,36 @@ $(document).ready(function() {
         }
 	});
 
-	// Paragraph
+	// Show/Hide
 	$("#paragraph").click(function() {
 		$("p").toggle();
 	});
 
-	// Box
+	// Animate (size)
 	$(".expandbutton").click(function() {
-		$("#square").animate({width: "500px", height: "500px"});
+		// Literal
+		$(".square").animate({width: "500px",
+							 height: "500px"});
 	});
 	$(".resetbutton").click(function() {
-		$("#square").animate({width: "100px", height: "100px"});
+		$(".square").animate({width: "100px", height: "100px"});
 	});
 
-	// Image
+	// Fading
 	$("#fadeinout").click(function() {
 
 		// Fades between in and out
 		$("img").fadeToggle("slow");
 	});
+
+	// Sliding - can also use slideToggle() for both
+	$("#slidedown").click(function() {
+		$("#panel").slideDown();
+	});
+	$("#slideup").click(function() {
+		$("#panel").slideUp();
+	});
+
+
+
 });

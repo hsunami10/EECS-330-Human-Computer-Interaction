@@ -4,19 +4,42 @@
 	<title>JQuery Testing Site</title>
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src = "test.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+	<h1>Website for JQuery Examples</h1>
 	
-	<button id="paragraph">Hide/Show</button>
+	<button id="paragraph">Hide/Show Paragraph</button>
 	<p>Click the button to disappear</p>
 
-	<button class = "expandbutton">Expand</button>
-	<button class = "resetbutton">Reset</button>
+	<hr>
 
-	<button id="square" style="background:#98bf21;height:100px;width:100px;margin:6px;"></button>
+	<div id="expand">
+		<button class = "expandbutton">Expand</button>
+		<button class="square" style="background:#98bf21;height:100px;width:100px;margin:6px;"></button>
+		<button class = "resetbutton">Reset</button>
+	</div>
 
-	<button id="fadeinout">Fade In/Out</button>
+	<hr>
 
-	<img src="https://wallpaperscraft.com/image/planet_light_spots_space_86643_1920x1080.jpg" style="width:800px; height:500px; float: right;">
+	<div>
+		<button id="fadeinout">Fade In/Out</button>
+
+		<img src="https://wallpaperscraft.com/image/planet_light_spots_space_86643_1920x1080.jpg" style="width:800px; height:500px; margin-left: 9%;">
+	</div>
+
+	<hr>
+
+	<div>
+		<button id="slidedown" style="float: left;">Slide Down</button>
+		<button id="slideup" style="float: right">Slide Up</button>
+		<div style="background-color: lightgreen; width: 400px; height: 20px; margin-left: 32%; text-align: center; padding: 30px;">Panel</div>
+		<div id="panel">Hello world!</div>
+	</div>
+	
+	<hr>
+
+
+
 </body>
 </html>

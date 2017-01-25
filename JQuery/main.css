@@ -1,0 +1,44 @@
+h1 {
+	text-align: center;
+}
+#paragraph {
+	background-color: lightgray;
+	border-radius: 8px;
+	width: 120px;
+	height: 80px;
+	outline: none;
+	font-size: 20px;
+}
+#expand {
+	margin-left: 40%;
+}
+#fadeinout {
+	background-color: lightgray;
+	border-radius: 8px;
+	width: 120px;
+	height: 80px;
+	outline: none;
+	font-size: 20px;
+
+	float: left;
+}
+#slidedown, #slideup {
+	background-color: lightgray;
+	border-radius: 8px;
+	width: 120px;
+	height: 80px;
+	outline: none;
+	font-size: 20px;
+}
+#panel {
+	background-color: lightgreen;
+	width: 400px;
+	height: 120px;
+	margin-left: 32%;
+	text-align: center;
+	padding: 30px;
+	
+	/* Important if you want to hide it first */
+	display: none;
+}
+
