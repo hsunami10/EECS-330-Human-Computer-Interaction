@@ -6,23 +6,22 @@ var value = 0;
 var operator = "";
 
 var operators = function(operate) {
-	document.getElementById("op").innerHTML = operate.target.id;
 	if(operate.target.id != operator && operator.length !== 0)
 		operator = operate.target.id;
 	if(countOp > 0)
 		return;
 	if(begin)
-		value = parseInt(interface.innerHTML);
+		value = parseFloat(interface.innerHTML);
 	else if(operator == "+")
-		value += parseInt(interface.innerHTML);
+		value += parseFloat(interface.innerHTML);
 	else if(operator == "-")
-		value -= parseInt(interface.innerHTML);
+		value -= parseFloat(interface.innerHTML);
 	else if(operator == "x")
-		value *= parseInt(interface.innerHTML);
+		value *= parseFloat(interface.innerHTML);
 	else if(operator == "÷")
-		value /= parseInt(interface.innerHTML);
+		value /= parseFloat(interface.innerHTML);
 	else
-		value = parseInt(interface.innerHTML);
+		value = parseFloat(interface.innerHTML);
 	countOp++;
 	interface.innerHTML = value.toString();
 	begin = false;
@@ -80,13 +79,13 @@ window.onload = function() {
 	// Equal
 	document.getElementById("=").onclick = function(e) {
 		if(operator == "+")
-			value += parseInt(interface.innerHTML);
+			value += parseFloat(interface.innerHTML);
 		else if(operator == "-")
-			value -= parseInt(interface.innerHTML);
+			value -= parseFloat(interface.innerHTML);
 		else if(operator == "x")
-			value *= parseInt(interface.innerHTML);
+			value *= parseFloat(interface.innerHTML);
 		else if(operator == "÷")
-			value /= parseInt(interface.innerHTML);
+			value /= parseFloat(interface.innerHTML);
 
 		interface.innerHTML = value.toString();
 		begin = false;
