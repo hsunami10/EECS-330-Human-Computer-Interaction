@@ -1,7 +1,3 @@
-
-body {
-	background-color: #F2B35C;
-}
 #title {
 	text-align: center;
 	font-family: Verdana, sans-serif;
@@ -22,44 +18,34 @@ li {
 }
 ul {
 	align-items: center;
-	margin-left: 2.8%;
-	margin-left: 3.3%;
-}
-#row_one {
+	/*margin-left: 3.3%;*/
 	margin-bottom: 3.1%;
 }
-#row_two {
+#row_one {
 	
+}
+#row_two {
+
 }
 #one1 {
-	padding: 6% 6%;
 	padding: 70px 68px;
-	
+	margin-left: 10%;
 }
 #one2 {
-	padding: 6% 3%;
 	padding: 70px 30px;
-	
 }
 #one3 {
-	padding: 6% 1.8%;
 	padding: 70px 18.5px;
-	
 }
 #two1 {
-	padding: 6% 2.9%;
 	padding: 70px 30px;
-	
+	margin-left: 10%;
 }
 #two2 {
-	padding: 6% .8%;
 	padding: 70px 6px;
-	
 }
 #two3 {
-	padding: 6% 2.3%;
 	padding: 70px 24px;
-	
 }
 .elemtitle {
 	font-size: 13px;
@@ -68,13 +54,85 @@ ul {
 	font-weight: bold;
 	font-size: 23px;
 }
-
+/* Media queries here */
+@media screen and (min-width: 1200px) {
+	#one1 {
+		margin-left: 10%;
+	}
+	#two1 {
+		margin-left: 10%;
+	}
+}
+@media screen and (min-width: 1400px) {
+	#one1 {
+		margin-left: 13%;
+	}
+	#two1 {
+		margin-left: 13%;
+	}
+}
+@media screen and (min-width: 1600px) {
+	#one1 {
+		margin-left: 16%;
+	}
+	#two1 {
+		margin-left: 16%;
+	}
+}
+@media screen and (min-width: 1800px) {
+	#one1 {
+		margin-left: 19%;
+	}
+	#two1 {
+		margin-left: 19%;
+	}
+}
+@media screen and (min-height: 700px) {
+	ul {
+		margin-bottom: 6%;
+	}
+}
 
 /* Put in general.css*/
+body {
+	background-color: #F2B35C;
+}
 #menu_button div {
 	background-color: white;
 	margin: 6px 0px;
 	width: 35px;
 	height: 5px;
 	border-radius: 5px;
+}
+#menu_button {
+	width: 35px;
+}
+/* Side nav menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+}
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
