@@ -3,9 +3,8 @@ var screenWidth = $(window).width();
 var screenHeight = $(window).height();
 
 $(document).ready(function() {
-	// Get browser window width and height
 
-	// Main menu
+	// Side navigation menu
 	$('#menu_button').on({
 		mouseenter: function() {
 			$('#menu_button div').animate({
