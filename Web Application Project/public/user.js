@@ -1,8 +1,14 @@
 // Javascript file for User Interaction and JQuery
-var screenWidth = $(window).width();
-var screenHeight = $(window).height();
 
 $(document).ready(function() {
+	var screenWidth = $(window).width();
+	var screenHeight = $(window).height();
+
+	// Account for different screen size
+	var margLeft = $('#one1').css('marginLeft');
+	var str = margLeft.substring(0,7);
+	var percent = Math.ceil(parseFloat(str)/screenWidth * 100);
+	var halfPercent = percent/2;
 
 	// Side navigation menu
 	$('#menu_button').on({
@@ -31,8 +37,7 @@ $(document).ready(function() {
 			});
 			$('#menu_button div').css('background-color', 'white');
 			$('li').animate({
-				marginLeft: '5%',
-				marginRight: '5%'
+				marginLeft: halfPercent.toString() + '%'
 			});
 		}
 	});
@@ -46,10 +51,52 @@ $(document).ready(function() {
 		$('body').animate({
 			backgroundColor: '#F2B35C'
 		});
-		$('li').animate({
-			marginLeft: '7.2%',
-			marginRight: '7.2%'
-		});
+
+		if(percent == 10) {
+			$('#one1').animate({
+				marginLeft: '10%'
+			});
+			$('#two1').animate({
+				marginLeft: '10%'
+			});
+		}
+		else if(percent == 13) {
+			$('#one1').animate({
+				marginLeft: '13%'
+			});
+			$('#two1').animate({
+				marginLeft: '13%'
+			});
+		}
+		else if(percent == 16) {
+			$('#one1').animate({
+				marginLeft: '16%'
+			});
+			$('#two1').animate({
+				marginLeft: '16%'
+			});
+		}
+		else if(percent == 19) {
+			$('#one1').animate({
+				marginLeft: '19%'
+			});
+			$('#two1').animate({
+				marginLeft: '19%'
+			});
+		}
+		else {
+			$('#one1').animate({
+				marginLeft: '10%'
+			});
+			$('#two1').animate({
+				marginLeft: '10%'
+			});
+		}
+
+		$('#one2').animate({marginLeft: '7.2%'});
+		$('#one3').animate({marginLeft: '7.2%'});
+		$('#two2').animate({marginLeft: '7.2%'});
+		$('#two3').animate({marginLeft: '7.2%'});
 	});
 	$('.sidenav a').on({
 		mouseenter: function() {

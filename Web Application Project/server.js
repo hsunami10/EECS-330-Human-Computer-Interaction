@@ -24,6 +24,9 @@ app.get('/friends.html', function(req, res) {
 app.get('/statistics.html', function(req, res) {
 	res.sendFile(path.join(__dirname + '/statistics.html'));
 });
+app.get('/progress.html', function(req, res) {
+	res.sendFile(path.join(__dirname + '/progress.html'));
+});
 
 server.listen(1337, function() {
 	console.log('Server listening on port 1337');

@@ -6,42 +6,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="user.js"></script>
+  <script src="general.js"></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="general.css">
-
-
-	<!-- Voice Recognition -->
-	<script>
-		if (annyang) {
-
-  		var greeting = function() {
-  			$("h1").text("Hello world!");
-  			$("h1").toggle();
-  		};
-
-  		var search = function(tag) {
-  			window.location.href = "https://www.google.com/#q=" + tag;
-  		};
-
-  		// Let's define a command.
-  		var commands = {
-    		'hello': greeting,
-    		'abort': function() {
-    			annyang.abort();
-    		},
-    		'go to google': function() {
-          window.location.href = "https://www.google.com/";
-    		},
-    		'search (up) *tag': search
-  		};
-
-  		// Add our commands to annyang
-  		annyang.addCommands(commands);
-
-  		// Start listening.
-  		annyang.start();
-		}
-	</script>
+  <script src="annyang.js"></script>
 
 </head>
 <body>
