@@ -39,6 +39,9 @@ $(document).ready(function() {
 				backgroundColor: '#b28443'
 			});
 			$('#menu_button div').css('background-color', 'white');
+			$('#names').animate({
+				marginLeft: (margins-8-40-125) + 'px'
+			});
 		}
 	});
 	$('#closeNavButton').click(function() {
@@ -50,6 +53,9 @@ $(document).ready(function() {
 		});
 		$('body').animate({
 			backgroundColor: '#F2B35C'
+		});
+		$('#names').animate({
+			marginLeft: (margins-8-40) + 'px'
 		});
 	});
 	$('.sidenav a').on({
