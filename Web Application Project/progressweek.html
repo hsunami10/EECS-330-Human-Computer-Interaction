@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curse Tracker: Progress</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="progress.js"></script>
+  <link rel="stylesheet" type="text/css" href="general.css">
+  <link rel="stylesheet" type="text/css" href="progress.css">
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+    	<a href="javascript:void(0)" id="closeNavButton" class="closebtn">&times;</a>
+    	<a href="mainmenu.html">Home</a>
+    	<a href="statistics.html">Statistics</a>
+    	<a href="friends.html">Friends</a>
+    	<a href="settings.html">Settings</a>
+  </div>
+	<div id="main">
+	    <div id="menu_button">
+      		<div></div>
+      		<div></div>
+      		<div></div>
+    	</div>
+      
+      <h1>Progress</h1>
+      <div><img src="http://www.mathgoodies.com/lessons/graphs/images/line_example1.jpg"></div>
+
+      <div id="dropdown">
+        <form action="#">
+          <fieldset>
+              <!--<label for="range">Select a range</label>-->
+              <select name="range" id="range" onchange="location = this.value;">
+              <option value="progressday.html">Past Day</option>
+              <option selected="selected" value="progressweek.html">Past Week</option>
+              <option value="progressmonth.html">Past Month</option>
+              <option value="progressyear.html">Past Year</option>
+            </select>
+          </fieldset>
+        </form>
+      </div>
+
+  </div>
+</body>
+</html>

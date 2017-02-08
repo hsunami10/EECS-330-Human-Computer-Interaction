@@ -5,9 +5,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="stats.js"></script>
+  <script src="favorites.js"></script>
 	<link rel="stylesheet" type="text/css" href="general.css">
-  <link rel="stylesheet" type="text/css" href="statistics.css">
+  <link rel="stylesheet" type="text/css" href="favorites.css">
 </head>
 <body>
 	<div id="mySidenav" class="sidenav">
@@ -24,11 +24,21 @@
       		<div></div>
     	</div>
 
-      <h1>Statistics</h1>
+      <a href="https://imgflip.com/i/1j88x9"><img src="https://i.imgflip.com/1j88x9.png" title="made at imgflip.com"/></a>
 
-      <a href="progressday.html" id="one">Progress</a>
-      <a href="calendar.html" id="two">Calendar</a>
-      <a href="favoritesday.html" id="three">Favorites</a>
+      <div id="dropdown">
+        <form action="#">
+          <fieldset>
+              <!--<label for="range">Select a range</label>-->
+              <select name="range" id="range" onchange="location = this.value;">
+              <option value="favoritesday.html">Past Day</option>
+              <option value="favoritesweek.html">Past Week</option>
+              <option value="favoritesmonth.html">Past Month</option>
+              <option selected="selected" value="favoritesyear.html">Past Year</option>
+            </select>
+          </fieldset>
+        </form>
+      </div>
 
   </div>
 </body>
