@@ -18,6 +18,8 @@ h1 {
 	-webkit-transition-duration: 0.65s; /* Safari */
     transition-duration: 0.65s;
     cursor: pointer;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 #main a:hover {
 	color: skyblue;
