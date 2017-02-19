@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 	if (annyang) {
   		var greeting = function() {

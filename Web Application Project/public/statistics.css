@@ -1,10 +1,10 @@
-h1 {
+#statistics_main h1 {
 	color: white;
 	font-family: Verdana, sans-serif;
 	font-size: 40px;
 	text-align: center;
 }
-#main a {
+#statistics_main a {
 	display: block;
 	font-family: Verdana, sans-serif;
 	color: white;
@@ -20,7 +20,7 @@ h1 {
     transition-duration: 0.65s;
     cursor: pointer;
 }
-#main a:hover {
+#statistics_main a:hover {
 	color: skyblue;
 	background-color: white;
 }
@@ -28,27 +28,27 @@ h1 {
 
 /* Account for height later */
 @media screen and (min-width: 1200px) {
-	#main a {
+	#statistics_main a {
 		margin: 5% 500px;
 	}
 }
 @media screen and (min-width: 1400px) {
-	#main a {
+	#statistics_main a {
 		margin: 5.5% 575px;
 	}
 }
 @media screen and (min-width: 1600px) {
-	#main a {
+	#statistics_main a {
 		margin: 6% 650px;
 	}
 }
 @media screen and (min-width: 1800px) {
-	#main a {
+	#statistics_main a {
 		margin: 6.5% 725px;
 	}
 }
 @media screen and (min-height: 700px) {
-	ul {
+	#statistics_main ul {
 		margin-bottom: 6%;
 	}
 }

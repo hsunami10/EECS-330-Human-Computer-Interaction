@@ -1,10 +1,10 @@
-h1 {
+#settings_menu h1 {
 	color: white;
 	font-family: Verdana, sans-serif;
 	font-size: 40px;
 	text-align: center;
 }
-#main a {
+#settings_menu a {
 	color: white;
 	display: block;
 	text-decoration: none;
@@ -21,7 +21,7 @@ h1 {
     margin-left: 25%;
     margin-right: 25%;
 }
-#main a:hover {
+#settings_menu a:hover {
 	color: skyblue;
 	background-color: white;
 }

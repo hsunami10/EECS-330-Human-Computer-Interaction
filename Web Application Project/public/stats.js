@@ -48,8 +48,8 @@ $(document).ready(function() {
 		$('body').animate({
 			backgroundColor: '#F2B35C'
 		});
-		$('#main a').animate({marginLeft: margins}, {duration: 100, queue: false});
-		$('#main a').animate({marginRight: margins}, {duration: 100, queue: false});
+		$('#statistics_main a').animate({marginLeft: margins}, {duration: 100, queue: false});
+		$('#statistics_main a').animate({marginRight: margins}, {duration: 100, queue: false});
 	});
 	$('.sidenav a').on({
 		mouseenter: function() {

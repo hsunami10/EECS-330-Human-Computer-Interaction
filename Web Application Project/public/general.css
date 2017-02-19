@@ -34,6 +34,25 @@ body {
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
+.sidenav button {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 25px;
+    color: #818181;
+    background-color: rgba(0,0,0,1);
+    border: 0px solid white;
+    display: block;
+    font-family: Verdana, sans-serif;
+    width: 100%;
+    cursor: pointer;
+}
+.sidenav button:hover, .offcanvas button:focus {
+    color: #f1f1f1;
+}
+.sidenav button:focus {
+    outline: 0;
+}
 .sidenav .closebtn {
     position: absolute;
     top: 0;

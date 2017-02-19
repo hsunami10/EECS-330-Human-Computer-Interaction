@@ -8,57 +8,158 @@
 	<script src="user.js"></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="general.css">
+  <link rel="stylesheet" type="text/css" href="statistics.css">
+  <link rel="stylesheet" type="text/css" href="friends.css">
+  <link rel="stylesheet" type="text/css" href="settings.css">
   <script src="annyang.js"></script>
-
+  <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
+
+  <script>
+    var socket = io();
+    
+
+  </script>
+
+  <!-- Voice Recognition -->
+  <script>
+
+  </script>
+
+  <script>
+  $(document).ready(function() {
+
+    // Hide everything but the main menu
+    $('#statistics_main').hide();
+    $('#friends_main').hide();
+    $('#settings_menu').hide();
+
+    // Navigation links
+    $('#home_link').click(function() {
+      $('#friends_main').hide();
+      $('#statistics_main').hide();
+      $('#settings_menu').hide();
+      $('#main_menu').fadeIn('slow');
+    });
+    $('#statistics_link').click(function() {
+      $('#main_menu').hide();
+      $('#friends_main').hide();
+      $('#settings_menu').hide();
+      $('#statistics_main').fadeIn('slow');
+    });
+    $('#friends_link').click(function() {
+      $('#main_menu').hide();
+      $('#statistics_main').hide();
+      $('#settings_menu').hide();
+      $('#friends_main').fadeIn('slow');
+    });
+    $('#settings_link').click(function() {
+      $('#main_menu').hide();
+      $('#statistics_main').hide();
+      $('#friends_main').hide();
+      $('#settings_menu').fadeIn('slow');
+    });
+  });
+  </script>
+
+
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" id="closeNavButton" class="closebtn">&times;</a>
-    <a href="mainmenu.html">Home</a>
-    <a href="statistics.html">Statistics</a>
-    <a href="friends.html">Friends</a>
-    <a href="settings.html">Settings</a>
+    <button id="home_link">Home</button>
+    <button id="statistics_link">Statistics</button>
+    <button id="friends_link">Friends</button>
+    <button id="settings_link">Settings</button>
   </div>
   
   <!-- Body content -->
   <div id="main">
+
+    <!-- Menu button -->
     <div id="menu_button">
       <div></div>
       <div></div>
       <div></div>
     </div>
-    
-    <h1 id="title">Curse Tracker</h1>
 
-    <ul id="row_one">
-      <li id="one1">
-        <div class="elemtitle">POINTS</div>
-        <div class="elemvalue">32</div>
-      </li>
-      <li id="one2">
-        <div class="elemtitle">LAST USED WORD</div>
-        <div class="elemvalue">"crap"</div>
-      </li>
-      <li id="one3">
-        <div class="elemtitle">TOTAL IN PAST HOUR</div>
-        <div class="elemvalue">5</div>
-      </li>
-    </ul>
+    <!-- Main menu -->
+    <div id="main_menu">
+      <h1 id="title">Curse Tracker</h1>
 
-    <ul id="row_two">
-      <li id="two1">
-        <div class="elemtitle">MOST USED WORD</div>
-        <div class="elemvalue">"darn"</div>
-      </li>
-      <li id="two2">
-        <div class="elemtitle">TIME SINCE LAST SWEAR</div>
-        <div class="elemvalue">03:04.46</div>
-      </li>
-      <li id="two3">
-        <div class="elemtitle">TOTAL IN PAST DAY</div>
-        <div class="elemvalue">20</div>
-      </li>
-    </ul>
+      <ul id="row_one">
+        <li id="one1">
+          <div class="elemtitle">POINTS</div>
+          <div class="elemvalue">32</div>
+        </li>
+        <li id="one2">
+          <div class="elemtitle">LAST USED WORD</div>
+          <div class="elemvalue">"crap"</div>
+        </li>
+        <li id="one3">
+          <div class="elemtitle">TOTAL IN PAST HOUR</div>
+          <div class="elemvalue">5</div>
+        </li>
+      </ul>
+
+      <ul id="row_two">
+        <li id="two1">
+          <div class="elemtitle">MOST USED WORD</div>
+          <div class="elemvalue">"darn"</div>
+        </li>
+        <li id="two2">
+          <div class="elemtitle">TIME SINCE LAST SWEAR</div>
+          <div class="elemvalue">03:04.46</div>
+        </li>
+        <li id="two3">
+          <div class="elemtitle">TOTAL IN PAST DAY</div>
+          <div class="elemvalue">20</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Statistics Main Window -->
+    <div id="statistics_main">
+      <h1>Statistics</h1>
+      <a href="progressday.html" id="one">Progress</a>
+      <a href="calendar.html" id="two">Calendar</a>
+      <a href="favoritesday.html" id="three">Favorites</a>
+    </div>
+
+    <!-- Friends Menu -->
+    <div id="friends_main">
+      <h1>Friends</h1>
+      
+      <ul id="names">
+        <li id="titleNames">Username</li>
+        <li>Bob</li>
+        <li>Joey</li>
+        <li>You</li>
+        <li>Sally</li>
+        <li>Megan</li>
+      </ul>
+
+      <ul id="scores">
+        <li id="titlesScores">Score</li>
+        <li>207</li>
+        <li>187</li>
+        <li>145</li>
+        <li>100</li>
+        <li>97</li>
+      </ul>
+    </div>
+
+    <!-- Settings Menu -->
+    <div id="settings_menu">
+      <h1>Settings</h1>
+      <a href="#">Change Username</a>
+      <a href="#">Change Email</a>
+      <a href="#">Change Password</a>
+      <a href="#" id="swap">Toggle Text/Voice</a>
+      <a href="#">Add Word</a>
+      <a href="#">Reset Data</a>
+      <a href="#">Delete Account</a>
+    </div>
+
   </div>
   
 </body>
