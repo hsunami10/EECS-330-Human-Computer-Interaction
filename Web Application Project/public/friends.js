@@ -29,14 +29,41 @@ $(document).ready(function() {
 			$('#menu_button div').css('background-color', '#707070');
 		},
 		mouseup: function() {
+			$('#mySidenav').animate({
+				width: '250px'
+			});
+			$('#main').animate({
+				marginLeft: '250px'
+			});
+			$('body').animate({
+				backgroundColor: '#b28443'
+			});
+			$('#menu_button div').css('background-color', 'white');
 			$('#names').animate({
 				marginLeft: (margins-8-40-125) + 'px'
 			});
 		}
 	});
 	$('#closeNavButton').click(function() {
+		$('#mySidenav').animate({
+			width: '0px'
+		});
+		$('#main').animate({
+			marginLeft: '0px'
+		});
+		$('body').animate({
+			backgroundColor: '#F2B35C'
+		});
 		$('#names').animate({
 			marginLeft: (margins-8-40) + 'px'
 		});
+	});
+	$('.sidenav a').on({
+		mouseenter: function() {
+			$(this).animate({color: 'white'},250);
+		},
+		mouseleave: function() {
+			$(this).animate({color: '#818181'},250);
+		}
 	});
 });
