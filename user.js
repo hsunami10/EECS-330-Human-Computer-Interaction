@@ -55,6 +55,7 @@ $(document).ready(function() {
 			$('li').animate({
 				marginLeft: halfPercent.toString() + '%'
 			});
+			$('#arrow').remove();
 		}
 	});
 	$('#closeNavButton').click(function() {
