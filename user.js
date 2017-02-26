@@ -14,6 +14,36 @@ $(document).ready(function() {
 	var arrowAnimation = function(element) {
 		$(element).animate({
 			marginTop: '30px'
+		});
+		$(element).animate({
+			marginTop: '0px'
+		});
+		$(element).animate({
+			marginTop: '30px'
+		});
+		$(element).animate({
+			marginTop: '0px'
+		});
+		$(element).animate({
+			marginTop: '30px'
+		});
+		$(element).animate({
+			marginTop: '0px'
+		});
+		$(element).animate({
+			marginTop: '30px'
+		});
+		$(element).animate({
+			marginTop: '0px'
+		});
+		$(element).animate({
+			marginTop: '30px'
+		});
+		$(element).animate({
+			marginTop: '0px'
+		});
+/*		$(element).animate({
+			marginTop: '30px'
 		}, {
 			complete: function() {
 				$(element).animate({
@@ -21,7 +51,7 @@ $(document).ready(function() {
 				});
 				arrowAnimation(element);
 			}
-		});
+		});*/
 	};
 	arrowAnimation('#arrow');
 
