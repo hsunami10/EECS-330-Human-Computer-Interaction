@@ -42,6 +42,7 @@ $(document).ready(function() {
 		$(element).animate({
 			marginTop: '0px'
 		});
+		$(element).hide();
 /*		$(element).animate({
 			marginTop: '30px'
 		}, {
