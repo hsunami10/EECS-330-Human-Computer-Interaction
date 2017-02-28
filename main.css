@@ -40,7 +40,10 @@ img {
 	padding: 70px 30px;
 }
 #one3 {
-	padding: 70px 18.5px;
+	padding: 70px 15px;
+}
+#one3 .elemtitle {
+	font-size: 10px;
 }
 #two1 {
 	padding: 70px 30px;
