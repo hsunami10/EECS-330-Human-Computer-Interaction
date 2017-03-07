@@ -24,7 +24,7 @@ $(document).ready(function() {
 			}, 200);
 		},
 		mousedown: function() {
-			$('#menu_button div').css('background-color', '#707070');
+			$('#menu_button div').css('background-color', '#707070');				// change background colors
 		},
 		mouseup: function() {
 			$('#mySidenav').animate({
