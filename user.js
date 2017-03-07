@@ -10,51 +10,6 @@ $(document).ready(function() {
 	var percent = Math.ceil(parseFloat(str)/screenWidth * 100);
 	var halfPercent = percent/2;
 
-	// Arrow animation -> continuous
-	var arrowAnimation = function(element) {
-		$(element).animate({
-			marginTop: '30px'
-		});
-		$(element).animate({
-			marginTop: '0px'
-		});
-		$(element).animate({
-			marginTop: '30px'
-		});
-		$(element).animate({
-			marginTop: '0px'
-		});
-		$(element).animate({
-			marginTop: '30px'
-		});
-		$(element).animate({
-			marginTop: '0px'
-		});
-		$(element).animate({
-			marginTop: '30px'
-		});
-		$(element).animate({
-			marginTop: '0px'
-		});
-		$(element).animate({
-			marginTop: '30px'
-		});
-		$(element).animate({
-			marginTop: '0px'
-		});
-/*		$(element).animate({
-			marginTop: '30px'
-		}, {
-			complete: function() {
-				$(element).animate({
-					marginTop: '0px'
-				});
-				arrowAnimation(element);
-			}
-		});*/
-	};
-	arrowAnimation('#arrow');
-
 
 	// Side navigation menu
 	$('#menu_button').on({
