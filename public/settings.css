@@ -1,0 +1,22 @@
+
+.options {
+	color: white;
+	display: block;
+	text-decoration: none;
+	background-color: skyblue;
+	padding: 30px;
+	font-size: 30px;
+	border: 2px solid white;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+
+	-webkit-transition-duration: 0.65s; /* Safari */
+    transition-duration: 0.65s;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.options:hover {
+	color: skyblue;
+	background-color: white;
+}

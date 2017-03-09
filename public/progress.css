@@ -1,0 +1,14 @@
+#graph {
+	display: block;
+	margin: 40px auto;
+}
+#dropdown {
+	margin: auto;
+}
+fieldset {
+	border: 0;
+}
+select {
+	font-size: 25px;
+	margin-bottom: 30px;
+}
